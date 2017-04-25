@@ -1,6 +1,7 @@
 # DimensionalPlotRecipes.jl
 
 [![Build Status](https://travis-ci.org/JuliaDiffEq/DimensionalPlotRecipes.jl.svg?branch=master)](https://travis-ci.org/JuliaDiffEq/DimensionalPlotRecipes.jl)
+[![Build status](https://ci.appveyor.com/api/projects/status/veiu62cimbs37edg?svg=true)](https://ci.appveyor.com/project/ChrisRackauckas/dimensionalplotrecipes-jl)
 [![Coverage Status](https://coveralls.io/repos/JuliaDiffEq/DimensionalPlotRecipes.jl/badge.svg?branch=master&service=github)](https://coveralls.io/github/JuliaDiffEq/DimensionalPlotRecipes.jl?branch=master)
 [![codecov.io](http://codecov.io/github/JuliaDiffEq/DimensionalPlotRecipes.jl/coverage.svg?branch=master)](http://codecov.io/github/JuliaDiffEq/DimensionalPlotRecipes.jl?branch=master)
 
