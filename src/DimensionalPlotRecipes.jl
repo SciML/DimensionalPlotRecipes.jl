@@ -7,8 +7,8 @@ using RecipesBase
 # Splits a complex matrix to its real and complex parts
 # Reals defaults solid, imaginary defaults dashed
 # Label defaults are changed to match the real-imaginary reference / indexing
-@recipe function f{T<:Real,T2<:Number}(x::AbstractArray{T},y::Array{Complex{T2}};
-                                       transformation=:split3D)
+@recipe function f(x::AbstractArray{T},y::Array{Complex{T2}};
+                   transformation=:split3D) where {T<:Real,T2<:Number}
   if transformation==:split2D
     A = real.(y)
     B = imag.(y)
