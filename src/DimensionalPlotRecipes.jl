@@ -30,7 +30,7 @@ using RecipesBase
   else
     error("Transformation unknown. Please use :split2D, :split3D, or :modulus")
   end
-  (retval...)
+  (retval...,)
 end
 
 end # module
