@@ -3,6 +3,7 @@ __precompile__()
 module DimensionalPlotRecipes
 
 using RecipesBase
+using LinearAlgebra
 
 # Splits a complex matrix to its real and complex parts
 # Reals defaults solid, imaginary defaults dashed
