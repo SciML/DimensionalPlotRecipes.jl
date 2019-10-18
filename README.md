@@ -12,10 +12,10 @@ with Plots.jl. Current recipes in the package include:
 
 ```julia
 # Transformation Options:
-# :split3D - Splits the complex numbers to a (real,real-part,imag-part) plot
-# :split2D - Splits to form separate series for the real and imaginary parts
-# :modulus - Tarnsforms the complex numbers to use their modulus
-# :modulus2 - Tarnsforms the complex numbers to use their squared modulus
+# :split3D  - Splits the complex numbers to a (real,real-part,imag-part) plot
+# :split2D  - Splits to form separate series for the real and imaginary parts
+# :modulus  - Transforms the complex numbers to use their modulus
+# :modulus2 - Transforms the complex numbers to use their squared modulus
 plot(x::AbstractArray{<:Real},
      y::Array{Complex{<:Number}};
      transformation=:split3D)
