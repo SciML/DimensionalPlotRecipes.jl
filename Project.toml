@@ -1,7 +1,7 @@
 name = "DimensionalPlotRecipes"
 uuid = "c619ae07-58cd-5f6d-b883-8f17bd6a98f9"
 authors = ["Chris Rackauckas <accounts@chrisrackauckas.com>"]
-version = "1.0.0"
+version = "1.1.0"
 
 [deps]
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
