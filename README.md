@@ -7,7 +7,7 @@
 DimensionalPlotRecipes.jl is a recipe library for higher dimensional plotting
 with Plots.jl. Current recipes in the package include:
 
-- Improved complex number support
+  - Improved complex number support
 
 ```julia
 # Transformation Options:
@@ -16,11 +16,11 @@ with Plots.jl. Current recipes in the package include:
 # :modulus  - Transforms the complex numbers to use their modulus
 # :modulus2 - Transforms the complex numbers to use their squared modulus
 plot(x::AbstractArray{<:Real},
-     y::Array{Complex{<:Number}};
-     transformation=:split3D)
+    y::Array{Complex{<:Number}};
+    transformation = :split3D)
 ```
 
 ## Future Support
 
-- Quaternions
-- Dimensional reduction (PCA,t-sne,etc.)
+  - Quaternions
+  - Dimensional reduction (PCA,t-sne,etc.)
