@@ -1,7 +1,7 @@
 module DimensionalPlotRecipes
 
-using RecipesBase
-using LinearAlgebra
+using RecipesBase: RecipesBase, @recipe
+using LinearAlgebra: LinearAlgebra, norm
 
 # Splits a complex matrix to its real and complex parts
 # Reals defaults solid, imaginary defaults dashed

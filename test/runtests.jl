@@ -1,5 +1,8 @@
 using DimensionalPlotRecipes, Test
 
+# Test explicit imports hygiene
+include("explicit_imports.jl")
+
 A = rand(5, 2) .+ im .* rand(5, 2)
 t = range(0, stop = 1, length = 5)
 
