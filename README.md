@@ -24,3 +24,4 @@ plot(x::AbstractArray{<:Real},
 
   - Quaternions
   - Dimensional reduction (PCA,t-sne,etc.)
+
