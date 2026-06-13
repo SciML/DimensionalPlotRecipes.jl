@@ -1,24 +1,8 @@
-using DimensionalPlotRecipes, Test
+using SciMLTesting
+using DimensionalPlotRecipes
+using Test
 
-const GROUP = get(ENV, "GROUP", "All")
-
-if GROUP == "All" || GROUP == "Core"
-    # Test explicit imports hygiene
-    include("explicit_imports.jl")
-
-    A = rand(5, 2) .+ im .* rand(5, 2)
-    t = range(0, stop = 1, length = 5)
-
-    using Plots
-    plot(t, A)
-
-    t = range(0, stop = 1, length = 5)
-    plot(t, A)
-    plot(t, A, transformation = :split3D)
-    plot(t, A, transformation = :modulus)
-    plot(t, A, transformation = :modulus2)
-end
-
-if GROUP == "QA"
-    include(joinpath("qa", "qa.jl"))
-end
+run_tests(;
+    core = joinpath(@__DIR__, "core.jl"),
+    qa = (; body = joinpath(@__DIR__, "qa", "qa.jl"), env = joinpath(@__DIR__, "qa")),
+)
