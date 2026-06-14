@@ -1,6 +1,7 @@
-using DimensionalPlotRecipes, Aqua, JET, Test
+using SafeTestsets
 
-@testset "Aqua" begin
+@safetestset "Aqua" begin
+    using DimensionalPlotRecipes, Aqua, Test
     # deps_compat and piracies are genuine findings tracked in
     # https://github.com/SciML/DimensionalPlotRecipes.jl/issues/50
     Aqua.test_all(DimensionalPlotRecipes; deps_compat = false, piracies = false)
@@ -8,6 +9,7 @@ using DimensionalPlotRecipes, Aqua, JET, Test
     @test_broken false  # Aqua piracies: @recipe-generated apply_recipe on RecipesBase types — see https://github.com/SciML/DimensionalPlotRecipes.jl/issues/50
 end
 
-@testset "JET" begin
+@safetestset "JET" begin
+    using DimensionalPlotRecipes, JET, Test
     @test_broken false  # JET: no matching method `is_key_supported(::Symbol)` in apply_recipe — see https://github.com/SciML/DimensionalPlotRecipes.jl/issues/50
 end
