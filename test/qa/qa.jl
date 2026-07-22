@@ -5,7 +5,5 @@ using RecipesBase: apply_recipe
 # DimensionalPlotRecipes, so Aqua flags it as piracy; treat_as_own clears it.
 run_qa(
     DimensionalPlotRecipes;
-    explicit_imports = true,
     aqua_kwargs = (; piracies = (; treat_as_own = [apply_recipe])),
-    api_docs_kwargs = (; rendered = true),
 )
