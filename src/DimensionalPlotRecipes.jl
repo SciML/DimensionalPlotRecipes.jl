@@ -2,6 +2,7 @@ module DimensionalPlotRecipes
 
 using RecipesBase: RecipesBase, @recipe
 using LinearAlgebra: LinearAlgebra, norm
+import PrecompileTools: @compile_workload, @setup_workload
 
 # Splits a complex matrix to its real and complex parts
 # Reals defaults solid, imaginary defaults dashed
@@ -39,6 +40,16 @@ using LinearAlgebra: LinearAlgebra, norm
         error("Transformation unknown. Please use :split2D, :split3D, :modulus, or :modulus2")
     end
     (retval...,)
+end
+
+@setup_workload begin
+    @compile_workload begin
+        y = ComplexF64[1 + 2im 3 + 4im; 5 + 6im 7 + 8im; 9 + 10im 11 + 12im]
+        norm.(y)
+        real.(y)
+        imag.(y)
+        abs2.(y)
+    end
 end
 
 end # module
