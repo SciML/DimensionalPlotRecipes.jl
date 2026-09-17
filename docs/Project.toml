@@ -1,0 +1,8 @@
+[deps]
+DimensionalPlotRecipes = "c619ae07-58cd-5f6d-b883-8f17bd6a98f9"
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+
+[compat]
+DimensionalPlotRecipes = "1"
+Documenter = "1"
+julia = "1.10"
