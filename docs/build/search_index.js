@@ -1,3 +1,0 @@
-var documenterSearchIndex = {"docs":
-[{"category":"section","location":"index.html#DimensionalPlotRecipes.jl","page":"Home","text":"Recipes for visualizing high-dimensional numbers and reductions with Plots.jl, for data visualization in scientific machine learning (SciML).","title":"DimensionalPlotRecipes.jl"},{"category":"section","location":"index.html#Installation","page":"Home","text":"To install DimensionalPlotRecipes.jl, use the Julia package manager:\n\nusing Pkg\nPkg.add(\"DimensionalPlotRecipes\")","title":"Installation"},{"category":"section","location":"index.html#API","page":"Home","text":"","title":"API"}]
-}
